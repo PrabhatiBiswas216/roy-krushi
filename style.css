@@ -1,0 +1,523 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+		margin: 0px;
+		padding: 0px;
+		background-color: #ffe4c4;
+	}
+
+.heading{
+	padding-top: 30px;
+	color: #2A052F;
+	text-decoration: underline;
+	text-underline-offset: 5px;
+	font-size: 40px;
+	text-decoration-color: #ff4500;
+	text-align: center;
+}	
+.header{
+	float: left;
+	width: 100%;
+	position: fixed;
+	top: 1px;
+	padding: 5px;
+	background: linear-gradient(to bottom right,#0D010E 10%,#350C34 20%,#652761,#8F4787,#BC86B9);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.shop-name{
+	color: #ffe4c4;
+	margin-left: 20px;
+	font-size: 50px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+.shop-name img{
+	width: 70px;
+	height: 90px;
+}
+.navbar{
+	margin-right: -80px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+}
+
+nav{
+	margin-top: 65px;
+	text-align: right;
+	margin-right: 50px;
+}
+nav a{
+	text-decoration: none;
+	color: #ffe4c4;
+}
+nav a:hover{
+	text-decoration: none;
+	color:  black;
+}
+nav ul{
+	list-style: none;
+	display: inline-block;
+}
+nav ul li{
+	font-size: 20px;
+	display: inline-block;
+	margin-right: 30px;
+	background: transparent;
+	backdrop-filter: blur(50px);
+	padding: 5px 20px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 1px 0px;	
+}
+nav ul li:hover{
+	background-color: #bcd569;
+	color: black;
+	box-shadow: 0px 0px 1px 0px;	
+	border-radius: 20px;
+	transition: 0.2s ease-in;
+	transform: scale(1.1);
+	/* font-weight: bold; */
+
+}
+.carousal{
+	clear: left;
+	float: left;	
+	margin-top: 100px;
+	position: relative;
+	z-index: -4;
+}
+
+
+
+/*second part start from here*/
+.won-container{
+	clear: both;
+	margin-top: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #ffe4c4;
+	padding: 30px 50px;
+}
+.explore-btn{
+	background-color: #ff4500;
+	border-radius: 20px;
+	padding: 5px 20px;
+	color: #ffe4c4;
+	transition: 0.5sec;
+}
+.explore-btn:hover{
+	background-color: #2A052F;
+	color: #ffe4c4;
+	border-radius: 20px;
+	padding: 5px 20px;
+	transition: 0.5s;
+}
+.own-details{
+	display: flex;
+	flex-direction: column;
+	background-color:#2A052F;
+	border-radius: 10px;
+	padding: 12px 5px;
+}
+
+.own-img{
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+	width: 200px;
+}
+.own-name{
+	margin-top: 5px;
+	padding: 10px 5px;
+	box-sizing: border-box;
+	border: 2px solid #616769;
+	border-radius: 10px;
+	background-color: #FC9696;
+}
+
+/* +++++++++++++++++++++ product css start from here ++++++++++++++++++++++*/
+
+.our-product{
+	margin-top: -40px;
+	clear: left;
+}
+.our-product h1{
+	padding-top: 30px;
+	color: #2A052F;
+	text-decoration: underline;
+	text-underline-offset: 5px;
+	font-size: 40px;
+	text-decoration-color: #ff4500;
+	text-align: center;
+}
+
+.card-container{
+	padding: 40px 5px;
+	margin: 50px 0px;
+	display: flex;
+	justify-content: center;
+}
+.product-card{
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 8px 2px;
+	width: 300px;
+	padding: 40px 10px 20px 10px;
+	margin: 20px;
+	text-align: center;
+}
+.product-card img{
+	width: 200px;
+	height: 150px;
+	display: block;
+	margin: auto;
+}
+
+.most-popular-product{
+	/* border: 2px solid red; */
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #c0c4c6;
+
+}
+.popular-card{
+	background-color: #ffffff;
+	border-radius: 10px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 4px 1px;
+	width: 250px;
+	height: 300px;
+	padding: 20px 10px 20px 10px;
+	margin: 40px 20px;
+	text-align: center;
+}
+.popular-card img{
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+/* +++++++++++++++++++++++++ brand css +++++++++++++++++++  */
+
+.brand-container{
+	
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.brand-container marquee{
+	position: relative;
+	z-index: -2;
+}
+.brand-card{
+	position: relative;
+	z-index: -12;
+	width: 200px;
+}
+.brand-card img{
+	width: 100%;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+/* ++++++++++++++++++++++ about css start from here ++++++++++++++++++++++++++++++*/
+.about-us{
+background-color: #ffe4c4;
+}
+.shop-title{
+	margin-top: 70px;
+	color: #2A052F;
+	text-decoration: underline;
+	text-underline-offset: 5px;
+	font-size: 40px;
+	text-decoration-color: #ff4500;
+	text-align: center;
+}
+
+.about{
+	margin: 60px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.about-heading{
+	margin-top: 50px;
+	text-align: center;
+}
+.about-card{
+	border: 2px solid #2A052F;
+	box-shadow: 0px 0px 5px 2px;
+	margin-top: 30px;
+	width: 300px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	padding: 20px 10px;
+	position: relative;
+}
+.features-name{
+	margin-top: 15px;
+	text-align: center;
+	color: #2A052F;
+}
+.features-description{
+	text-align: center;
+}
+.about-icon{
+	text-align: center;
+	background-color: #ffffff;   
+	border-radius: 50%;
+	padding: 15px;
+	width: 70px;
+	height: 70px;
+	font-size: 50px;
+	position: absolute;
+	top: -60px;
+	left: 40%;
+	color: #000000;
+	border: 2px solid #2A052F;
+	box-shadow: 0px 0px 5px 2px;
+
+}
+
+
+
+
+
+/*+++++++++++++++++++++++ contact css start from here +++++++++++++++++++++++++++*/
+
+#contact a{
+	text-decoration: none;
+	color: #FC9696;
+
+}
+.contact-container{
+	position: relative;
+	z-index: -2;
+}
+.contact-detail{
+	position: absolute;
+	top: 200px;
+	left: 380px;
+	display: flex;
+	z-index: 2;
+	
+}
+.contact-description{
+	width: 230px;
+	height: 200px;
+	margin: 20px;
+	padding: 20px;
+	background-color: #ffffff;
+	text-align: center;
+	
+}
+.ccontact-description:hover{
+	cursor: pointer;
+	background-color: rgb(105, 187, 103);
+	transition: 0.4s ease-in;
+	transform: scale(1.1);
+}
+.contact-description a{
+	text-decoration: none;
+	color: #2A052F;
+}
+.contact-description p{
+	font-weight: 450;
+	color: ##2A052F;
+}
+.contact-icon{
+	width: 50px;
+	display: block;
+	margin: auto;
+}
+.contact-card{
+	position: absolute;
+	top: 380px;
+	left: 540px;
+	background-color: #616769;
+	width: 500px;
+	padding: 40px 20px;
+	text-align: center;
+}
+
+.contact-card input{
+	width: 100%;
+	border-radius: 10px;
+	padding: 10px 40px;
+	margin: 20px auto;
+}
+.submit-btn{
+	width: 150px;
+	padding: 10px 20px;
+	background-color: #2A052F;
+	color: #ffffff;
+	border-radius: 20px;
+}
+
+
+ 
+/* +++++++++++++++++++++++++ account css start from here +++++++++++++++++++++++++*/
+.acount-container{
+	margin: 40px ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+	margin-top: 200px;
+
+}
+section{
+	position: relative;
+	max-width: 400px;
+	background-color:  #616769;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50px 0 50px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 3rem;
+}
+h1{
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
+.input-box{
+	position: relative;
+	margin: 30px 0;
+	max-width: 310px;
+	border-bottom: 2px solid white;
+}
+.input-box label{
+	position: absolute;
+	/* top: 50%; */
+	left: 5px;
+	/* transform: translateY(-50%); */
+	color: #ffffff;
+	font-size: 1.2rem;
+	pointer-events: none;
+	transition: all 0.5s ease-in-out;
+}
+
+.input-box input{
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	padding: 20px 10px 0 5px;
+	color: yellow;
+	/* border: 2px solid red; */
+}
+.input-box icon{
+	position: absolute;
+	right: 0px;
+	top: 20px;
+}
+.forget{
+	margin: 35px 0px;
+	font-size: 1rem;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-around;
+}
+.forget label{
+	display: flex;
+	align-items: center;
+
+}
+.forget label input{
+	margin-right: 3px;
+
+}
+.forget a{
+	font-weight: 600;
+	margin-left: 10px;
+}
+button{
+	margin-top: 20px;
+	border: 1px solid grey;
+	width: 100%;
+	height: 40px;
+	border-radius: 40px;
+	
+	background-color: #ffffff;
+	outline: none;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 600;
+	transition: all 0.5s ease;
+}
+button:hover{
+	background-color: #350C34;
+	color: white;
+}
+.register{
+	position: relative;
+	z-index: 2;
+	font-size: 1rem;
+	color: #ffffff;
+	text-align: center;
+	margin: 15px  0px 10px ;
+}
+.register:hover{
+	cursor: pointer;
+}
+
+
+
+
+/*+++++++++++++++++++++++++++ footer css is strat from here +++++++++++++++++++++++++++*/
+.footer{
+	margin-top: 100px;
+	width: 100%;
+	background: #2A052F;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0px;
+		
+}
+
+.footer h4{
+	color: white;
+	font-size: 18px;
+}
+
+.foot{
+	width: 22%;
+	padding: 10px;
+	color: #FC9696;
+}
+.foot input{
+	border: 2px solid black;
+	border-radius: 4px;
+	padding: 8px;
+	width: 100%;
+}
+
+
+.statement{
+	background-color:  #2A052F;
+	color: white;
+	font-weight: 6;
+}
+
+
